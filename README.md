@@ -4,7 +4,7 @@ Repositório para envio dos trabalhos feitos no 4º Semestre do curso FullStack 
 <hr>
 -- == INFORMAÇÕES SOBRE OS TRABALHOS == --
 
-<br>
+
 TRABALHO NIVEL 1
 <ul>
 <li> [EM ANDAMENTO] </li>
