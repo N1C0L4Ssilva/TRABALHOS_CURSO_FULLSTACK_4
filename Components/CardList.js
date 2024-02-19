@@ -1,17 +1,16 @@
 import React from "react"
-import { Image, StyleSheet, View, Text } from 'react-native';
+import { Image, StyleSheet, View, Text, TouchableOpacity } from 'react-native';
 const CardLista=(props)=>{
     return(
-    <View style={[Estilo.MainDiv, Estilo.Img_Nome]}>
+    <TouchableOpacity style={[Estilo.MainDiv, Estilo.Img_Nome]}
+    onPress={()=>props.navigate.navigate("DADOS_FORNECEDORES",props.Id)}>
         <Image style={Estilo.Img_Nome_Imagem}
-        source={{
-            uri: props.Imag,
-          }}/>
+        source={{uri: props.Imag || "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"}}/>
         <View style={Estilo.Img_Nome_Div}>
             <Text style={Estilo.Img_Nome_Div_Nome}>{props.Nome}</Text>
             <Text style={Estilo.Img_Nome_Div_Descricao}>{props.Desc}</Text>
         </View>
-    </View>)
+    </TouchableOpacity>)
 }
 const CoresStyle={
     'Black':'#000000',

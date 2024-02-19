@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+
 const CoresStyle={
   'Black':'#000000',
   'White':'#ffffff',
@@ -8,16 +9,20 @@ const CoresStyle={
 }
 
 const styles = StyleSheet.create({
-  Centralizar:{
-    display:'flex',
-    justifyContent:'center',
-    alignSelf:'center'
-  },
   container:{
     margin:10,
     marginTop:25,
-    padding:0
+    padding:0,
+    display:'flex',
   },
+  Centralizar:{
+    display:'flex',
+    justifyContent:'center',
+    alignItems:'center',
+    textAlign:'center',
+    textAlignVertical:'center'
+  },
+
   NavBar:{
     width: '100%',
     height: 35,
@@ -44,32 +49,15 @@ const styles = StyleSheet.create({
     borderRadius: 6,
     backgroundColor: CoresStyle.BackColor
   },
-
-  Main:{
+  
+  main:{
     backgroundColor: CoresStyle.BackColor,
-    margin:5,
-    padding:5,
-    display:'flex',
-    flexDirection:'column',
-    borderRadius:5
+    margin: 5,
+    padding: 5,
+    display: 'flex',
+    flexDirection: 'column',
+    borderRadius: 5,
   },
-  Input:{
-    borderWidth:.5,
-    borderStyle:'solid',
-    borderColor:'#00000',
-    backgroundColor: CoresStyle.White,
-    borderRadius:5,
-    marginBottom: 5,
-    width:'inherit',
-    fontSize: 10,
-  },
-  CategUi:{
-    marginTop:5,
-    marginRight:0,
-    marginLeft:15,
-    marginBottom:5,
-  },
-  CategLi:{fontSize:12},
   MainDiv:{
     padding: 5,
     marginBottom: 5,
@@ -79,35 +67,57 @@ const styles = StyleSheet.create({
     backgroundColor: CoresStyle.White,
     borderRadius:5
   },
-  CategDiv:{
+  Img_Nome:{
+    padding:0,
+    marginBottom: 5,
+    borderColor: 'transparent',
+    backgroundColor: CoresStyle.BackColor,
     width: '100%',
-    height: 30,
+    height: 120,
     display: 'flex',
-    position: 'relative',
+    flexDirection:'row'
   },
-  CategInput:{
-    width: '100%',
-    height: 25,
-    paddingTop:0,
-    paddingRight:25,
-    paddingBottom:0,
-    paddingLeft:5,
-    fontSize: 10,
+  Img_Nome_Imagem:{
+    width: 120,
+    height: 120,
+    borderRadius: 5,
+    backgroundColor: CoresStyle.White,
+  },
+  Img_Nome_Div:{
+    marginLeft: 5,
+    display: 'flex',
+    flexDirection: 'column',
+    width: '63.5%',
+  },
+  Img_Nome_Div_Nome:{
+    width: 'auto',
+    height:25,
+    marginBottom:5,
+    borderRadius: 5,
     borderColor: '#000000',
     borderStyle: 'solid',
-    borderWidth: .5
-  },
-  CategInputButton:{
-    position: 'absolute',
-    top: 2,
-    right: 2,
-    width: 21,
-    height: 21,
+    borderWidth: .5,
     backgroundColor: CoresStyle.White,
-    borderColor: 'Black',
+  },
+  Img_Nome_Div_Descricao:{
+    width: 'auto',
+    height:91,
+    borderRadius: 5,
+    borderColor: '#000000',
     borderStyle: 'solid',
     borderWidth: .5,
-    borderRadius:5
+    backgroundColor: CoresStyle.White,
+  },
+  CategSpan:{
+    display:'flex',
+    alignSelf:'center',
+    justifyContent:'center'
+  },
+  CategUi:{
+    marginTop:5,
+    marginRight:0,
+    marginLeft:15,
+    marginBottom:5,
   },
   EndrContSpan:{
     fontSize:12,
@@ -125,9 +135,22 @@ const styles = StyleSheet.create({
   hr:{
     borderBottomColor: 'black',
     borderBottomWidth: .5,
-    marginBottom:5,
-    marginTop:0
-  }
+  },
+  EditDataButton:{
+    width:'90%',
+    height:30,
+    margin:10,
+    alignSelf:'center'
+  },
+  EditDataText:{
+    backgroundColor:'white',
+    width:'100%',
+    height:'100%',
+    borderRadius: 5,
+    borderColor: '#000000',
+    borderStyle: 'solid',
+    borderWidth: .5
+  },
 });
 
 export default styles;

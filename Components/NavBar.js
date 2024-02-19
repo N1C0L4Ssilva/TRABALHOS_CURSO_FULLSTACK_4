@@ -3,10 +3,11 @@ import { StyleSheet,View,Text, TouchableOpacity} from 'react-native';
 const NavBar=(props)=>{
     return(
     <View style={Estilo.NavBar}>
-        <TouchableOpacity style={Estilo.NavButton}>
-            <Text style={[Estilo.NavSpan,Estilo.CategSpan]}>X</Text>
+        <TouchableOpacity style={Estilo.NavButton}
+        onPress={()=>props.navigate.goBack()}>
+            <Text style={[Estilo.Centralizar]}>X</Text>
         </TouchableOpacity>
-        <Text style={Estilo.NavSpan}> TEXTO 3 </Text>
+        <Text style={[Estilo.NavSpan,Estilo.Centralizar]}>{props.Titulo}</Text>
     </View>
     )
 }
@@ -43,6 +44,13 @@ const Estilo=StyleSheet.create({
         marginLeft: 5,
         borderRadius: 6,
         backgroundColor: CoresStyle.BackColor
+    },
+    Centralizar:{
+        display:'flex',
+        justifyContent:'center',
+        alignItems:'center',
+        textAlign:'center',
+        textAlignVertical:'center'
     },
 })
 export default NavBar
