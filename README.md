@@ -6,8 +6,9 @@ Repositório para envio dos trabalhos feitos no 4º Semestre do curso FullStack 
 
 TRABALHO NIVEL 1
 <ul>
-<li> [EM ANDAMENTO] </li>
-<li>LINGUAGEM USADA: [EM ANDAMENTO] </li>
+<li> Adicionando interatividade com o React Native </li>
+<li>LINGUAGEM USADA: JavaScript </li>
+<li>Framework: REACT NATIVE</li>
 </ul>
 
 <hr>
